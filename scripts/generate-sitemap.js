@@ -19,20 +19,20 @@ const staticPages = [
 
 // Akü modelleri
 const akuModels = [
-  '60-amper', '72-amper', '90-amper', '105-amper', 
+  '60-amper', '72-amper', '90-amper', '105-amper',
   '135-amper', '180-amper', '200-amper', '225-amper', '240-amper'
 ];
 
 // Bölgeler
 const regions = [
-  'nilufer', 'osmangazi', 'yildirim', 'mudanya', 'gemlik', 'gursu'
+  'nilufer', 'osmangazi', 'mudanya'
 ];
 
 // Blog yazıları
 const blogPosts = [
   'araba-akusu-degistirme-rehberi',
   'arac-akusu-biterse-ne-yapilir',
-  'oto-aku-fiyatlari-2024',
+  'oto-aku-fiyatlari-2025',
   'en-iyi-araba-akuleri',
   'mobil-aku-servisi-avantajlari',
   '60-72-amper-aku-farklari',
@@ -40,7 +40,7 @@ const blogPosts = [
 
 function generateSitemap() {
   const currentDate = new Date().toISOString().split('T')[0];
-  
+
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 `;
@@ -94,7 +94,7 @@ function generateSitemap() {
   // Dosyaya yaz
   const sitemapPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
   fs.writeFileSync(sitemapPath, sitemap);
-  
+
   console.log(`✅ Sitemap generated successfully at ${sitemapPath}`);
   console.log(`📊 Total URLs: ${staticPages.length + akuModels.length + regions.length + blogPosts.length}`);
 }

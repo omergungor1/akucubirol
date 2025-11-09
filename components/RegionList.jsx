@@ -15,29 +15,11 @@ export default function RegionList() {
       neighborhoods: 18,
     },
     {
-      name: 'Yıldırım',
-      slug: 'yildirim',
-      description: 'Yıldırım ilçesine garantili akü satış ve montaj',
-      neighborhoods: 15,
-    },
-    {
       name: 'Mudanya',
       slug: 'mudanya',
       description: 'Mudanya ve sahil kesiminde mobil akü hizmeti',
       neighborhoods: 8,
-    },
-    {
-      name: 'Gemlik',
-      slug: 'gemlik',
-      description: 'Gemlik bölgesine hızlı ve güvenilir akü servisi',
-      neighborhoods: 6,
-    },
-    {
-      name: 'Gürsu',
-      slug: 'gursu',
-      description: 'Gürsu ilçesine anında yerinde akü değişimi',
-      neighborhoods: 5,
-    },
+    }
   ];
 
   return (
@@ -64,10 +46,10 @@ export default function RegionList() {
               {/* İkon */}
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                  <svg 
-                    className="w-6 h-6 text-accent" 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    className="w-6 h-6 text-accent"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -90,10 +72,10 @@ export default function RegionList() {
                   </div>
                 </div>
 
-                <svg 
-                  className="w-5 h-5 text-textMuted group-hover:text-accent group-hover:translate-x-1 transition-all" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className="w-5 h-5 text-textMuted group-hover:text-accent group-hover:translate-x-1 transition-all"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

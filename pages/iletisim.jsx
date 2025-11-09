@@ -86,7 +86,7 @@ export default function Iletisim() {
                 </div>
               </div>
 
-              {/* Lokasyon */}
+              {/* Adres */}
               <div className="card">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -97,13 +97,16 @@ export default function Iletisim() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-heading font-semibold text-lg text-textDark mb-2">
-                      Hizmet Bölgesi
+                      Adres
                     </h3>
                     <p className="text-textDark mb-1">
-                      Bursa ve Çevresi
+                      Bağlarbaşı, 1. Hürriyet Cd. No:156 D:c
                     </p>
                     <p className="text-sm text-textMuted">
-                      Nilüfer • Osmangazi • Mudanya • Yıldırım • Gemlik • Gürsu
+                      16160 Osmangazi/Bursa
+                    </p>
+                    <p className="text-xs text-textMuted mt-2">
+                      Hizmet Bölgesi: Nilüfer • Osmangazi • Mudanya
                     </p>
                   </div>
                 </div>
@@ -145,7 +148,7 @@ export default function Iletisim() {
                     Acil Akü İhtiyacınız mı Var?
                   </h3>
                   <p className="text-primary/80 mb-6">
-                    Hemen arayın, 30 dakika içinde yanınızdayız!
+                    Hemen arayın, 15 dakika içinde yanınızdayız!
                   </p>
                   <div className="flex flex-col gap-3">
                     <a
@@ -217,7 +220,7 @@ export default function Iletisim() {
               Bursa Genelinde Hizmetinizdeyiz
             </h3>
             <p className="text-textMuted mb-4">
-              Nilüfer, Osmangazi, Mudanya, Yıldırım, Gemlik, Gürsu ve çevre ilçelerde
+              Nilüfer, Osmangazi, Mudanya ve çevre ilçelerde
               7/24 mobil akü servisi
             </p>
             <a

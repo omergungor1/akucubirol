@@ -9,13 +9,18 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-background text-textDark antialiased;
     font-family: 'Inter', system-ui, sans-serif;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Poppins', system-ui, sans-serif;
     @apply font-semibold;
   }
@@ -25,15 +30,15 @@
   .btn-primary {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-primary font-semibold text-base transition-all duration-200 hover:bg-yellow-400 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl;
   }
-  
+
   .btn-secondary {
     @apply inline-flex items-center justify-center px-5 py-2.5 rounded-lg border-2 border-success text-success font-medium transition-all duration-200 hover:bg-success hover:text-white;
   }
-  
+
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .card {
     @apply bg-surface rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6;
   }
@@ -43,7 +48,7 @@
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .skip-link {
     @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-accent focus:text-primary focus:rounded;
   }
@@ -59,6 +64,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -68,3 +74,9 @@
   animation: infinite-scroll 30s linear infinite;
 }
 
+/* Mobilde daha hızlı scroll */
+@media (max-width: 640px) {
+  .animate-infinite-scroll {
+    animation: infinite-scroll 10s linear infinite;
+  }
+}

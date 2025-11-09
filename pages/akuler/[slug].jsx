@@ -274,7 +274,7 @@ export default function AkuDetay({ aku }) {
     },
     {
       title: 'Montaj nasıl yapılır?',
-      content: 'Akü montajımız tamamen ücretsizdir ve aracınızın bulunduğu yerde gerçekleştirilir. Sipariş sonrası ortalama 30 dakika içinde yerinize ulaşıyoruz. Profesyonel ekibimiz eski aküyü söküp yeni aküyü monte eder ve test eder.',
+      content: 'Akü montajımız tamamen ücretsizdir ve aracınızın bulunduğu yerde gerçekleştirilir. Sipariş sonrası ortalama 15 dakika içinde yerinize ulaşıyoruz. Profesyonel ekibimiz eski aküyü söküp yeni aküyü monte eder ve test eder.',
     },
     {
       title: 'Garanti koşulları nelerdir?',

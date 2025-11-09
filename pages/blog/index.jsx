@@ -7,7 +7,7 @@ export default function Blog() {
       slug: 'araba-akusu-degistirme-rehberi',
       title: 'Araba Aküsü Değiştirme: Kapsamlı Rehber',
       excerpt: 'Araba aküsünü nasıl değiştireceğinizi, nelere dikkat etmeniz gerektiğini ve profesyonel montajın avantajlarını öğrenin.',
-      date: '2024-01-15',
+      date: '2025-01-15',
       category: 'Rehber',
       readTime: '5 dakika',
     },
@@ -15,15 +15,15 @@ export default function Blog() {
       slug: 'arac-akusu-biterse-ne-yapilir',
       title: 'Araç Aküsü Biterse Ne Yapılır? 7 Pratik Çözüm',
       excerpt: 'Aracınızın aküsü yolda bittiyse paniklemein! İşte yapmanız gerekenler ve acil çözüm yöntemleri.',
-      date: '2024-01-12',
+      date: '2025-01-12',
       category: 'Sorun Çözme',
       readTime: '4 dakika',
     },
     {
-      slug: 'oto-aku-fiyatlari-2024',
-      title: 'Oto Akü Fiyatları 2024: Güncel Liste ve Karşılaştırma',
-      excerpt: '2024 yılı oto akü fiyatları, marka karşılaştırmaları ve en uygun fiyatlı modeller hakkında bilgi edinin.',
-      date: '2024-01-10',
+      slug: 'oto-aku-fiyatlari-2025',
+      title: 'Oto Akü Fiyatları 2025: Güncel Liste ve Karşılaştırma',
+      excerpt: '2025 yılı oto akü fiyatları, marka karşılaştırmaları ve en uygun fiyatlı modeller hakkında bilgi edinin.',
+      date: '2025-01-10',
       category: 'Fiyatlandırma',
       readTime: '6 dakika',
     },
@@ -31,7 +31,7 @@ export default function Blog() {
       slug: 'en-iyi-araba-akuleri',
       title: 'En İyi Araba Aküleri: Marka ve Model Önerileri',
       excerpt: 'Piyasadaki en kaliteli ve güvenilir akü markalarını, özelliklerini ve hangi araç tipine uygun olduklarını keşfedin.',
-      date: '2024-01-08',
+      date: '2025-01-08',
       category: 'İnceleme',
       readTime: '7 dakika',
     },
@@ -39,7 +39,7 @@ export default function Blog() {
       slug: 'mobil-aku-servisi-avantajlari',
       title: 'Mobil Akü Servisi: Avantajları ve Kullanım Rehberi',
       excerpt: 'Yerinde akü değişimi hizmeti nedir, nasıl çalışır ve neden tercih edilmelidir? Tüm detaylar bu yazıda.',
-      date: '2024-01-05',
+      date: '2025-01-05',
       category: 'Hizmetler',
       readTime: '5 dakika',
     },
@@ -47,7 +47,7 @@ export default function Blog() {
       slug: '60-72-amper-aku-farklari',
       title: '60 ve 72 Amper Akü Arasındaki Farklar',
       excerpt: 'Aracınız için 60 amper mi 72 amper akü mü almalısınız? Kapasiteleri, fiyatları ve kullanım alanları karşılaştırması.',
-      date: '2024-01-03',
+      date: '2025-01-03',
       category: 'Rehber',
       readTime: '4 dakika',
     },
@@ -69,7 +69,7 @@ export default function Blog() {
               Blog
             </h1>
             <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
-              Araç aküsü hakkında bilmeniz gereken her şey: bakım ipuçları, 
+              Araç aküsü hakkında bilmeniz gereken her şey: bakım ipuçları,
               satın alma rehberleri ve uzman tavsiyeleri
             </p>
           </div>

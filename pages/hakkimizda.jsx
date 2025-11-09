@@ -97,7 +97,7 @@ export default function Hakkimizda() {
                     </svg>
                   ),
                   title: 'Hız ve Verimlilik',
-                  description: 'Müşterilerimizin zamanına değer veriyor, hızlı ve etkili çözümler sunuyoruz. Ortalama 30 dakikada adresinize ulaşıyoruz.',
+                  description: 'Müşterilerimizin zamanına değer veriyor, hızlı ve etkili çözümler sunuyoruz. Ortalama 15 dakikada adresinize ulaşıyoruz.',
                 },
                 {
                   icon: (
@@ -156,7 +156,7 @@ export default function Hakkimizda() {
               {[
                 { number: '7/24', label: 'Kesintisiz Hizmet' },
                 { number: '3 Yıl', label: 'Garanti Süresi' },
-                { number: '30 Dk', label: 'Ortalama Varış' },
+                { number: '15 Dk', label: 'Ortalama Varış' },
                 { number: '%100', label: 'Orijinal Ürün' },
               ].map((stat, index) => (
                 <div key={index} className="text-center bg-white/10 backdrop-blur-sm rounded-xl p-6">

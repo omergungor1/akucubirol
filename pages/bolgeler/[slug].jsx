@@ -65,35 +65,7 @@ const regionsData = [
       'Deniz etkili ortamlara uygun aküler',
       'Tatil yerleşimlerine acil servis',
     ],
-  },
-  {
-    slug: 'gemlik',
-    name: 'Gemlik',
-    description: 'Gemlik ilçesinde hızlı ve güvenilir akü servisi sağlıyoruz.',
-    neighborhoods: [
-      'Cumhuriyet', 'Kayhan', 'Adliye', 'Yeni Mahalle', 'Merkez', 'Fıstıklı'
-    ],
-    serviceHighlights: [
-      'Liman bölgesine özel hizmet',
-      'Ticari araçlara öncelikli servis',
-      'Sanayi tesislerine hızlı ulaşım',
-      'Tatil bölgelerine destek',
-    ],
-  },
-  {
-    slug: 'gursu',
-    name: 'Gürsu',
-    description: 'Gürsu ilçesinde anında yerinde akü değişimi ve montaj hizmeti sunuyoruz.',
-    neighborhoods: [
-      'Atatürk', 'Kurtuluş', 'Fevzipaşa', 'Yuksel', 'Merkez'
-    ],
-    serviceHighlights: [
-      'Sanayi tesislerine hızlı servis',
-      'Küçük esnafa özel yaklaşım',
-      'Organize sanayi bölgesine kolay erişim',
-      'Yol üstü acil yardım',
-    ],
-  },
+  }
 ];
 
 export default function BolgeDetay({ region }) {
@@ -199,8 +171,8 @@ export default function BolgeDetay({ region }) {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {[
-                    { label: 'Hızlı Ulaşım', value: '~30 dakika' },
-                    { label: 'Garanti Süresi', value: '3 yıl' },
+                    { label: 'Hızlı Ulaşım', value: '~15 dakika' },
+                    { label: 'Garanti Süresi', value: '3 yıl (Bazı modeller)' },
                     { label: 'Çalışma Saati', value: '7/24' },
                     { label: 'Ödeme', value: 'Nakit/Kart' },
                   ].map((item, index) => (
@@ -288,7 +260,6 @@ export default function BolgeDetay({ region }) {
           </h2>
           <div className="flex flex-wrap justify-center gap-3">
             {regionsData
-              .filter((r) => r.slug !== region.slug)
               .map((r) => (
                 <Link
                   key={r.slug}

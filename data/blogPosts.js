@@ -3,7 +3,7 @@ export const blogPosts = [
     slug: 'araba-akusu-degistirme-rehberi',
     title: 'Araba Aküsü Değiştirme: Kapsamlı Rehber',
     excerpt: 'Araba aküsünü nasıl değiştireceğinizi, nelere dikkat etmeniz gerektiğini ve profesyonel montajın avantajlarını öğrenin.',
-    date: '2024-01-15',
+    date: '2025-01-15',
     category: 'Rehber',
     readTime: '5 dakika',
     content: `
@@ -83,7 +83,7 @@ Araba aküsü değişimi, dikkatli ve doğru yapıldığında basit bir işlemdi
     slug: 'arac-akusu-biterse-ne-yapilir',
     title: 'Araç Aküsü Biterse Ne Yapılır? 7 Pratik Çözüm',
     excerpt: 'Aracınızın aküsü yolda bittiyse paniklemey in! İşte yapmanız gerekenler ve acil çözüm yöntemleri.',
-    date: '2024-01-12',
+    date: '2025-01-12',
     category: 'Sorun Çözme',
     readTime: '4 dakika',
     content: `
@@ -196,16 +196,16 @@ Akü biterse panik yapmayın! Yukarıdaki çözümlerden size uygun olanı uygul
     `
   },
   {
-    slug: 'oto-aku-fiyatlari-2024',
-    title: 'Oto Akü Fiyatları 2024: Güncel Liste ve Karşılaştırma',
-    excerpt: '2024 yılı oto akü fiyatları, marka karşılaştırmaları ve en uygun fiyatlı modeller hakkında bilgi edinin.',
-    date: '2024-01-10',
+    slug: 'oto-aku-fiyatlari-2025',
+    title: 'Oto Akü Fiyatları 2025: Güncel Liste ve Karşılaştırma',
+    excerpt: '2025 yılı oto akü fiyatları, marka karşılaştırmaları ve en uygun fiyatlı modeller hakkında bilgi edinin.',
+    date: '2025-01-10',
     category: 'Fiyatlandırma',
     readTime: '6 dakika',
     content: `
-# Oto Akü Fiyatları 2024: Güncel Liste ve Karşılaştırma
+# Oto Akü Fiyatları 2025: Güncel Liste ve Karşılaştırma
 
-2024 yılında oto akü fiyatları, marka, amper değeri ve tekn olojiye göre değişiklik göstermektedir. Bu rehberde, güncel fiyatları ve satın alma önerilerini bulacaksınız.
+2025 yılında oto akü fiyatları, marka, amper değeri ve tekn olojiye göre değişiklik göstermektedir. Bu rehberde, güncel fiyatları ve satın alma önerilerini bulacaksınız.
 
 ## Amper Değerine Göre Fiyat Aralıkları
 
@@ -312,7 +312,7 @@ Kış aylarında talep artar, fiyatlar yükselir
 - Güvenilir performans
 - Kapsamlı garanti
 
-## 2024 Önerileri
+## 2025 Önerileri
 
 ### Ekonomik Seçim
 **60-72 Amper İnci/Turbo Akü**
@@ -355,7 +355,7 @@ Eski akünüz için 200₺ - 500₺ arasında indirim alabilirsiniz.
 
 ## Sonuç
 
-2024'te akü fiyatları kalite ve kapasiteye göre 2.500₺ ile 12.000₺ arasında değişmektedir. Aracınıza uygun, kaliteli ve garantili bir akü seçmek uzun vadede tasarruf sağlar.
+2025'te akü fiyatları kalite ve kapasiteye göre 2.500₺ ile 12.000₺ arasında değişmektedir. Aracınıza uygun, kaliteli ve garantili bir akü seçmek uzun vadede tasarruf sağlar.
 
 **Akücü Birol'da**:
 - ✓ Rekabetçi Fiyatlar
@@ -371,11 +371,11 @@ Eski akünüz için 200₺ - 500₺ arasında indirim alabilirsiniz.
     slug: 'en-iyi-araba-akuleri',
     title: 'En İyi Araba Aküleri: Marka ve Model Önerileri',
     excerpt: 'Piyasadaki en kaliteli ve güvenilir akü markalarını, özelliklerini ve hangi araç tipine uygun olduklarını keşfedin.',
-    date: '2024-01-08',
+    date: '2025-01-08',
     category: 'İnceleme',
     readTime: '7 dakika',
     content: `
-# En İyi Araba Aküleri: 2024 Marka ve Model Önerileri
+# En İyi Araba Aküleri: 2025 Marka ve Model Önerileri
 
 Piyasada onlarca akü markası ve yüzlerce model bulunuyor. Bu rehberde, test sonuçları ve kullanıcı deneyimlerine göre en iyi araba akülerini inceleyeceğiz.
 
@@ -569,7 +569,7 @@ Aküleri değerlendirirken kullandığımız kriterler:
 - Montajı profesyonele yaptırın
 - Eski aküyü geri verin (çevre için önemli)
 
-## En İyi 5 Akü (2024)
+## En İyi 5 Akü (2025)
 
 ### 1. Varta Silver Dynamic AGM
 **Fiyat**: 6.500₺
@@ -617,7 +617,7 @@ En iyi akü, ihtiyacınıza ve bütçenize en uygun olanıdır. Premium markalar
     slug: 'mobil-aku-servisi-avantajlari',
     title: 'Mobil Akü Servisi: Avantajları ve Kullanım Rehberi',
     excerpt: 'Yerinde akü değişimi hizmeti nedir, nasıl çalışır ve neden tercih edilmelidir? Tüm detaylar bu yazıda.',
-    date: '2024-01-05',
+    date: '2025-01-05',
     category: 'Hizmetler',
     readTime: '5 dakika',
     content: `
@@ -632,7 +632,7 @@ Mobil akü servisi, profesyonel bir ekibin size gelmesi prensibine dayanır:
 ### Hizmet Adımları
 1. **Telefon ile arama** yaparsınız
 2. **Lokasyon bilgisi** verilir
-3. **Ekip yola çıkar** (ortalama 20-30 dakika)
+3. **Ekip yola çıkar** (ortalama 15-30 dakika)
 4. **Yerinde test** yapılır
 5. **Akü değişimi** gerçekleştirilir
 6. **Ödeme ve belge** teslimi
@@ -651,7 +651,7 @@ Toplam işlem süresi: **30-45 dakika**
 
 **Mobil Servis**:
 - Telefon etme: 2 dakika
-- Bekleme: 20-30 dakika
+- Bekleme: 15-30 dakika
 - Değişim: 15 dakika
 - Toplam: 30-45 dakika
 
@@ -792,7 +792,7 @@ Hayır, montaj tamamen ücretsiz
 
 ### Avantajlarımız
 - ✓ 7/24 hizmet
-- ✓ Ortalama 30 dakikada yerinizdeyiz
+- ✓ Ortalama 15 dakikada yerinizdeyiz
 - ✓ Ücretsiz montaj
 - ✓ 3 yıl garanti
 - ✓ Tüm markalar mevcut
@@ -803,10 +803,7 @@ Hayır, montaj tamamen ücretsiz
 Bursa genelinde:
 - Nilüfer
 - Osmangazi
-- Yıldırım
 - Mudanya
-- Gemlik
-- Gürsu
 
 ## Sonuç
 
@@ -815,8 +812,8 @@ Mobil akü servisi, modern yaşamın gerektirdiği hız, konfor ve güvenilirli�
 **Akücü Birol ile**:
 - Hiçbir yere gitmenize gerek yok
 - Biz size geliyoruz
-- 30 dakikada işlem tamamlanıyor
-- 3 yıl garantili hizmet
+- 15 dakikada işlem tamamlanıyor
+- 3 yıl garantili hizmet (Bazı modellerde geçerli.)
 
 ### Hemen Arayın: +90 533 771 76 16
 ### WhatsApp: https://wa.me/905337717616
@@ -826,7 +823,7 @@ Mobil akü servisi, modern yaşamın gerektirdiği hız, konfor ve güvenilirli�
     slug: '60-72-amper-aku-farklari',
     title: '60 ve 72 Amper Akü Arasındaki Farklar',
     excerpt: 'Aracınız için 60 amper mi 72 amper akü mü almalısınız? Kapasiteleri, fiyatları ve kullanım alanları karşılaştırması.',
-    date: '2024-01-03',
+    date: '2025-01-03',
     category: 'Rehber',
     readTime: '4 dakika',
     content: `
