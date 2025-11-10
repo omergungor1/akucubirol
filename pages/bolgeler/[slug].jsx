@@ -12,10 +12,10 @@ const regionsData = [
       'Balat', 'Kayapa'
     ],
     serviceHighlights: [
-      'Üniversite kampüsüne özel hizmet',
-      'Teknokent ve iş merkezlerine öncelikli servis',
-      'Modern yapılara uygun ekipman',
-      'Geniş otoparklara kolay erişim',
+      '15 dakikada yerinde akü değişimi',
+      'Ücretsiz akü kontrolü ve test',
+      'Tüm marka araçlara uyumlu akü',
+      'Eski akü geri alımı garantili',
     ],
   },
   {
@@ -29,10 +29,10 @@ const regionsData = [
       'Teferrüç', 'Üçevler', 'Yunuseli'
     ],
     serviceHighlights: [
-      'Tarihi merkeze özel hizmet',
-      'Sanayi bölgelerine hızlı erişim',
-      'Yoğun trafik bölgelerine pratik çözüm',
-      'Çok katlı apartmanlara servis',
+      'Acil yol yardımı 7/24',
+      '3 yıl garantili markalar',
+      'Nakit ve kart ile ödeme',
+      'Profesyonel montaj ekibi',
     ],
   },
   {
@@ -45,10 +45,10 @@ const regionsData = [
       'Mollaarap', 'Selimiye', 'Siteler', 'Yavuz Selim', 'Yeşil'
     ],
     serviceHighlights: [
-      'Tarihi doku gözetilerek hizmet',
-      'Dar sokaklara uygun araçlar',
-      'Sanayi sitelerine özel servis',
-      'Yoğun yerleşim alanlarına öncelik',
+      'Start-Stop araçlara özel akü',
+      'Ağır vasıta akü stokları',
+      'Araç elektrik sistem kontrolü',
+      'Anında servis garantisi',
     ],
   },
   {
@@ -60,10 +60,10 @@ const regionsData = [
       'Balabancık', 'Bağlarbaşı', 'Esence'
     ],
     serviceHighlights: [
-      'Sahil yolu üzeri hızlı servis',
-      'Yazlık bölgelere özel hizmet',
-      'Deniz etkili ortamlara uygun aküler',
-      'Tatil yerleşimlerine acil servis',
+      'Garantili ve dayanıklı aküler',
+      'Nakit ve kart ile ödeme',
+      'Profesyonel montaj ekibi',
+      '7/24 hizmet',
     ],
   }
 ];
@@ -141,7 +141,7 @@ export default function BolgeDetay({ region }) {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
-                      <span className="text-sm text-textDark">{neighborhood}</span>
+                      <span className="text-sm text-textDark">{region.name} {neighborhood} Akü Servisi</span>
                     </div>
                   ))}
                 </div>

@@ -7,13 +7,15 @@ export default function Document() {
         {/* Preconnect Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-        
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+
         {/* Manifest */}
         <link rel="manifest" href="/manifest.json" />
-        
+
         {/* Theme Color */}
         <meta name="theme-color" content="#0D1B2A" />
       </Head>
@@ -22,7 +24,7 @@ export default function Document() {
         <a href="#main-content" className="skip-link">
           Ana içeriğe geç
         </a>
-        
+
         <Main />
         <NextScript />
       </body>

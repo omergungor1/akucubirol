@@ -113,13 +113,13 @@ export default function Home() {
       name: 'Ayşe K.',
       location: 'Osmangazi, Bursa',
       rating: 5,
-      comment: '3 yıl garantili akü aldım, fiyatlar çok uygundu. Yerinde montaj hizmeti de çok pratikti.',
+      comment: 'Fiyatları diğer akücülere göre gayet uygun. Kapımın önünde montaj yapıldı, çok kolay oldu.',
     },
     {
       name: 'Ahmet D.',
       location: 'Mudanya, Bursa',
       rating: 5,
-      comment: 'İşlem çok hızlıydı, profesyonel ekip. Aküm 2 yıldır sorunsuz çalışıyor.',
+      comment: 'Sabah arabam marş basmadı, aradım çabucak geldiler. Güler yüzlü esnaf, çok memnun kaldım.',
     },
   ];
 
