@@ -12,20 +12,11 @@ mobil-aku-servisi
 
 ucretsiz-aku-montaji
 
+aku-yol-yardim
+
 Osmangazi
 
 Mudanya
 
 Nilüfer
 
-
-orhaneli -> deneyelim, günlük bir araç oraya çıkartırız -> Havalar soğuyunca encivardan da reklamı aç -> encivar kalite puan metriklerini iyileştir
-keles
-büyükorhan
-
-
-- servis ücretsiz
-- wp -> 
-
-
-8-9 

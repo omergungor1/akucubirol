@@ -15,6 +15,14 @@ const staticPages = [
   { url: '/blog', changefreq: 'weekly', priority: 0.7 },
   { url: '/iletisim', changefreq: 'monthly', priority: 0.7 },
   { url: '/hakkimizda', changefreq: 'monthly', priority: 0.6 },
+  { url: '/7-24-aku-servisi', changefreq: 'monthly', priority: 0.9 },
+  { url: '/nobetci-akucu', changefreq: 'monthly', priority: 0.9 },
+  { url: '/acil-aku-degisimi', changefreq: 'monthly', priority: 0.9 },
+  { url: '/fiyat-al', changefreq: 'monthly', priority: 0.9 },
+  { url: '/garantili-aku-satisi', changefreq: 'monthly', priority: 0.9 },
+  { url: '/mobil-aku-servisi', changefreq: 'monthly', priority: 0.9 },
+  { url: '/ucretsiz-aku-montaji', changefreq: 'monthly', priority: 0.9 },
+  { url: '/aku-yol-yardim', changefreq: 'monthly', priority: 0.9 },
 ];
 
 // Akü modelleri
