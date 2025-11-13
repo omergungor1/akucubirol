@@ -1,30 +1,7 @@
 import Layout from '../../components/Layout';
 import Link from 'next/link';
 
-export default function Bolgeler() {
-  const regions = [
-    {
-      name: 'Nilüfer',
-      slug: 'nilufer',
-      description: 'Nilüfer ilçesi ve tüm mahallelerine 7/24 hızlı akü servisi. Ücretsiz yerinde montaj.',
-      neighborhoods: 12,
-      popular: ['Beşevler', 'Görükle', 'Özlüce', 'Ertuğrul', 'Konak'],
-    },
-    {
-      name: 'Osmangazi',
-      slug: 'osmangazi',
-      description: 'Osmangazi bölgesine anında yerinde akü montajı ve mobil servis hizmeti.',
-      neighborhoods: 18,
-      popular: ['Çekirge', 'Heykel', 'Soğanlı', 'Hamitler', 'Panayır'],
-    },
-    {
-      name: 'Mudanya',
-      slug: 'mudanya',
-      description: 'Mudanya ve sahil kesiminde mobil akü hizmeti. Deneyimli ekip, hızlı servis.',
-      neighborhoods: 8,
-      popular: ['Merkez', 'Güzelyalı', 'Altıntaş', 'Mütareke', 'Zeytlinlik'],
-    }
-  ];
+export default function Bolgeler({ regions }) {
 
   return (
     <Layout
@@ -65,66 +42,72 @@ export default function Bolgeler() {
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {regions.map((region) => (
-              <Link
+              <div
                 key={region.slug}
-                href={`/bolgeler/${region.slug}`}
-                className="card group hover:border-accent cursor-pointer h-full"
+                className="card group hover:border-accent h-full flex flex-col"
               >
-                {/* İkon ve Başlık */}
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                    <svg
-                      className="w-7 h-7 text-accent"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-
-                  <div className="flex-1">
-                    <h3 className="font-heading font-semibold text-2xl text-textDark mb-2 group-hover:text-accent transition-colors">
-                      {region.name}
-                    </h3>
-                    <div className="flex items-center gap-2 text-sm text-textMuted">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                <Link
+                  href={`/bolgeler/${region.slug}`}
+                  className="flex-1 flex flex-col"
+                >
+                  {/* İkon ve Başlık */}
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                      <svg
+                        className="w-7 h-7 text-accent"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
-                      <span>{region.neighborhoods} mahalle</span>
+                    </div>
+
+                    <div className="flex-1">
+                      <h3 className="font-heading font-semibold text-2xl text-textDark mb-2 group-hover:text-accent transition-colors">
+                        {region.name}
+                      </h3>
+                      <div className="flex items-center gap-2 text-sm text-textMuted">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                        </svg>
+                        <span>{region.neighborhoods} mahalle</span>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Açıklama */}
-                <p className="text-textMuted mb-4 leading-relaxed">
-                  {region.description}
-                </p>
+                  {/* Açıklama */}
+                  <p className="text-textMuted mb-4 leading-relaxed">
+                    {region.description}
+                  </p>
 
-                {/* Popüler Mahalleler */}
-                <div className="mb-4">
-                  <p className="text-sm font-medium text-textDark mb-2">Popüler mahalleler:</p>
-                  <div className="flex flex-wrap gap-2">
-                    {region.popular.slice(0, 3).map((neighborhood) => (
-                      <span
-                        key={neighborhood}
-                        className="inline-flex items-center px-2 py-1 rounded-md bg-background text-xs text-textDark"
-                      >
-                        {neighborhood}
-                      </span>
-                    ))}
+                  {/* Popüler Mahalleler */}
+                  <div className="mb-4">
+                    <p className="text-sm font-medium text-textDark mb-2">Popüler mahalleler:</p>
+                    <div className="flex flex-wrap gap-2">
+                      {region.popular.slice(0, 3).map((neighborhood) => (
+                        <span
+                          key={neighborhood}
+                          className="inline-flex items-center px-2 py-1 rounded-md bg-background text-xs text-textDark"
+                        >
+                          {neighborhood}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                </Link>
 
                 {/* CTA */}
-                <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                  <span className="text-sm text-accent font-medium group-hover:text-yellow-600 transition-colors">
+                <div className="flex items-center justify-between pt-4 border-t border-gray-200 mt-auto">
+                  <Link
+                    href={`/bolgeler/${region.slug}`}
+                    className="text-sm text-accent font-medium group-hover:text-yellow-600 transition-colors"
+                  >
                     Detaylı Bilgi →
-                  </span>
+                  </Link>
                   <a
                     href="tel:+905337717616"
-                    onClick={(e) => e.stopPropagation()}
                     className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-accent text-primary text-sm font-semibold hover:bg-yellow-400 transition-all"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,7 +116,7 @@ export default function Bolgeler() {
                     Ara
                   </a>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
@@ -227,5 +210,38 @@ export default function Bolgeler() {
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const regions = [
+    {
+      name: 'Nilüfer',
+      slug: 'nilufer',
+      description: 'Nilüfer ilçesi ve tüm mahallelerine 7/24 hızlı akü servisi. Ücretsiz yerinde montaj.',
+      neighborhoods: 12,
+      popular: ['Beşevler', 'Görükle', 'Özlüce', 'Ertuğrul', 'Konak'],
+    },
+    {
+      name: 'Osmangazi',
+      slug: 'osmangazi',
+      description: 'Osmangazi bölgesine anında yerinde akü montajı ve mobil servis hizmeti.',
+      neighborhoods: 18,
+      popular: ['Çekirge', 'Heykel', 'Soğanlı', 'Hamitler', 'Panayır'],
+    },
+    {
+      name: 'Mudanya',
+      slug: 'mudanya',
+      description: 'Mudanya ve sahil kesiminde mobil akü hizmeti. Deneyimli ekip, hızlı servis.',
+      neighborhoods: 8,
+      popular: ['Merkez', 'Güzelyalı', 'Altıntaş', 'Mütareke', 'Zeytlinlik'],
+    }
+  ];
+
+  return {
+    props: {
+      regions,
+    },
+    // Tamamen statik - sadece build zamanında render edilir
+  };
 }
 

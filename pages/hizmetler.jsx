@@ -1,81 +1,30 @@
 import Layout from '../components/Layout';
 
-export default function Hizmetler() {
-  const services = [
-    {
-      id: 'yerinde-montaj',
-      title: 'Yerinde Akü Montajı',
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-      description: 'Nerede olursanız olun, akünüz aracınızın bulunduğu yerde profesyonel ekibimiz tarafından değiştirilir.',
-      features: [
-        '7/24 hızlı servis',
-        'Ortalama 15 dakikada adresinizde',
-        'Profesyonel montaj ekibi',
-        'Tüm araç tiplerine uygun',
-        'Eski akü geri alımı',
-        'Ücretsiz kontrol ve test',
-      ],
-    },
-    {
-      id: 'mobil-servis',
-      title: 'Mobil Akü Servisi',
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
-      description: 'Aküsü biten araçlar için anında yol yardımı. Aracınız nerede kalırsa kalsın yanınızdayız.',
-      features: [
-        'Acil durum müdahalesi',
-        'Takviye kablosu ile start',
-        'Yerinde akü değişimi',
-        'Şarj ve test hizmeti',
-        'Bursa geneli hizmet',
-        'Hızlı çözüm garantisi',
-      ],
-    },
-    {
-      id: 'start-stop',
-      title: 'Start-Stop Aküler',
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
-      description: 'Start-Stop teknolojili araçlar için özel olarak üretilmiş yüksek performanslı aküler.',
-      features: [
-        'AGM ve EFB teknolojisi',
-        'Yüksek döngü ömrü',
-        'Hızlı şarj kabiliyeti',
-        'Orijinal ekipman kalitesi',
-        'Tüm markalar mevcut',
-        'Uzun garanti süresi',
-      ],
-    },
-    {
-      id: 'agir-vasita',
-      title: 'Ağır Vasıta Aküleri',
-      icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-        </svg>
-      ),
-      description: 'Kamyon, otobüs, iş makineleri ve ağır vasıtalar için özel güçlendirilmiş aküler.',
-      features: [
-        'Yüksek kapasiteli modeller',
-        'Endüstriyel dayanıklılık',
-        'Ağır çalışma koşullarına uygun',
-        '180A - 240A arası',
-        'Profesyonel montaj',
-        'Ticari araç garantisi',
-      ],
-    },
-  ];
+export default function Hizmetler({ services }) {
+  // Icon mapping
+  const iconMap = {
+    location: (
+      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    ),
+    lightning: (
+      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    ),
+    shield: (
+      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+    ),
+    truck: (
+      <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+      </svg>
+    ),
+  };
 
   return (
     <Layout
@@ -114,7 +63,7 @@ export default function Hizmetler() {
                 {/* İkon ve Başlık */}
                 <div className="flex-1 text-center lg:text-left">
                   <div className="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-accent/10 text-accent mb-6">
-                    {service.icon}
+                    {iconMap[service.icon]}
                   </div>
                   <h2 className="font-heading font-bold text-3xl text-textDark mb-4">
                     {service.title}
@@ -242,5 +191,73 @@ export default function Hizmetler() {
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const services = [
+    {
+      id: 'yerinde-montaj',
+      title: 'Yerinde Akü Montajı',
+      icon: 'location',
+      description: 'Nerede olursanız olun, akünüz aracınızın bulunduğu yerde profesyonel ekibimiz tarafından değiştirilir.',
+      features: [
+        '7/24 hızlı servis',
+        'Ortalama 15 dakikada adresinizde',
+        'Profesyonel montaj ekibi',
+        'Tüm araç tiplerine uygun',
+        'Eski akü geri alımı',
+        'Ücretsiz kontrol ve test',
+      ],
+    },
+    {
+      id: 'mobil-servis',
+      title: 'Mobil Akü Servisi',
+      icon: 'lightning',
+      description: 'Aküsü biten araçlar için anında yol yardımı. Aracınız nerede kalırsa kalsın yanınızdayız.',
+      features: [
+        'Acil durum müdahalesi',
+        'Takviye kablosu ile start',
+        'Yerinde akü değişimi',
+        'Şarj ve test hizmeti',
+        'Bursa geneli hizmet',
+        'Hızlı çözüm garantisi',
+      ],
+    },
+    {
+      id: 'start-stop',
+      title: 'Start-Stop Aküler',
+      icon: 'shield',
+      description: 'Start-Stop teknolojili araçlar için özel olarak üretilmiş yüksek performanslı aküler.',
+      features: [
+        'AGM ve EFB teknolojisi',
+        'Yüksek döngü ömrü',
+        'Hızlı şarj kabiliyeti',
+        'Orijinal ekipman kalitesi',
+        'Tüm markalar mevcut',
+        'Uzun garanti süresi',
+      ],
+    },
+    {
+      id: 'agir-vasita',
+      title: 'Ağır Vasıta Aküleri',
+      icon: 'truck',
+      description: 'Kamyon, otobüs, iş makineleri ve ağır vasıtalar için özel güçlendirilmiş aküler.',
+      features: [
+        'Yüksek kapasiteli modeller',
+        'Endüstriyel dayanıklılık',
+        'Ağır çalışma koşullarına uygun',
+        '180A - 240A arası',
+        'Profesyonel montaj',
+        'Ticari araç garantisi',
+      ],
+    },
+  ];
+
+  return {
+    props: {
+      services,
+    },
+    // Tamamen statik - sadece build zamanında render edilir
+  };
 }
 

@@ -38,6 +38,7 @@ export default function Footer() {
                   src="/logo.png"
                   alt="Akücü Birol Logo"
                   fill
+                  sizes="40px"
                   className="object-contain p-0.5"
                 />
               </div>

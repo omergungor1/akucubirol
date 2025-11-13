@@ -284,3 +284,10 @@ export default function Hakkimizda() {
   );
 }
 
+export async function getStaticProps() {
+  return {
+    props: {},
+    // Tamamen statik - sadece build zamanında render edilir
+  };
+}
+

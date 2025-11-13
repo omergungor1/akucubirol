@@ -54,6 +54,7 @@ export default function Header() {
                     src="/logo.png"
                     alt="Akücü Birol Logo"
                     fill
+                    sizes="(max-width: 1024px) 32px, 40px"
                     className="object-contain p-0.5"
                     priority
                   />

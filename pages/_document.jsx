@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
   return (
-    <Html lang="tr">
+    <Html lang="tr" data-scroll-behavior="smooth">
       <Head>
         {/* Google Tag Manager */}
         <script
@@ -39,6 +39,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
+            title="Google Tag Manager"
+            referrerPolicy="no-referrer-when-downgrade"
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}

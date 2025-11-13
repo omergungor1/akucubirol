@@ -4,124 +4,41 @@ import BrandCarousel from '../components/BrandCarousel';
 import ProductCard from '../components/ProductCard';
 import RegionList from '../components/RegionList';
 
-export default function Home() {
-  const featuredProducts = [
-    {
-      title: '60 Amper Akü',
-      amper: '60',
-      description: 'Küçük ve orta boy araçlar için ideal ekonomik akü çözümü',
-      features: [
-        '3 yıl garanti',
-        'Ücretsiz yerinde montaj',
-        'Tüm markalar mevcut',
-      ],
-      price: '2.500',
-      slug: '60-amper',
-    },
-    {
-      title: '72 Amper Akü',
-      amper: '72',
-      description: 'En popüler akü modeli, çoğu araç için uygun',
-      features: [
-        '3 yıl garanti',
-        'Ücretsiz yerinde montaj',
-        'Start-Stop teknolojisi',
-      ],
-      price: '3.000',
-      slug: '72-amper',
-    },
-    {
-      title: '90 Amper Akü',
-      amper: '90',
-      description: 'Büyük hacimli araçlar ve SUV\'lar için güçlü akü',
-      features: [
-        '3 yıl garanti',
-        'Ücretsiz yerinde montaj',
-        'Yüksek performans',
-      ],
-      price: '3.800',
-      slug: '90-amper',
-    },
-  ];
-
-  const features = [
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      title: '7/24 Hizmet',
-      description: 'Gece gündüz demeden her an yanınızdayız. Acil durumlarda hemen arayın.',
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-        </svg>
-      ),
-      title: '3 Yıl Garanti',
-      description: 'Bazı akü modellerinde 3 yıl garantili. Orijinal ürün güvencesiyle hizmet.',
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-      title: 'Yerinde Montaj',
-      description: 'Nerede olursanız olun, akünüz aracınızın bulunduğu yerde değiştirilir.',
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      title: 'Uygun Fiyat',
-      description: 'Piyasanın en uygun fiyatları ile kaliteli akü hizmeti sunuyoruz.',
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      ),
-      title: 'Hızlı Servis',
-      description: 'Aradığınız anda harekete geçiyoruz. Ortalama 15 dakikada yanınızdayız.',
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-        </svg>
-      ),
-      title: 'Orijinal Ürün',
-      description: 'Sadece orijinal ve güvenilir marka aküler ile çalışıyoruz.',
-    },
-  ];
-
-  const testimonials = [
-    {
-      name: 'Mehmet Y.',
-      location: 'Nilüfer, Bursa',
-      rating: 5,
-      comment: 'Gece yarısı aracım çalışmadı, hemen aradım ve 20 dakikada geldiler. Çok memnun kaldım, herkese tavsiye ederim.',
-    },
-    {
-      name: 'Ayşe K.',
-      location: 'Osmangazi, Bursa',
-      rating: 5,
-      comment: 'Fiyatları diğer akücülere göre gayet uygun. Kapımın önünde montaj yapıldı, çok kolay oldu.',
-    },
-    {
-      name: 'Ahmet D.',
-      location: 'Mudanya, Bursa',
-      rating: 5,
-      comment: 'Sabah arabam marş basmadı, aradım çabucak geldiler. Güler yüzlü esnaf, çok memnun kaldım.',
-    },
-  ];
+export default function Home({ featuredProducts, features, testimonials }) {
+  // Icon mapping
+  const iconMap = {
+    clock: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+    shield: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+      </svg>
+    ),
+    location: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    ),
+    money: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+    lightning: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    ),
+    badge: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+      </svg>
+    ),
+  };
 
   return (
     <Layout
@@ -188,7 +105,7 @@ export default function Home() {
                 className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-all hover:scale-105"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/20 text-accent mb-4">
-                  {feature.icon}
+                  {iconMap[feature.icon]}
                 </div>
                 <h3 className="font-heading font-semibold text-xl mb-3">
                   {feature.title}
@@ -296,5 +213,109 @@ export default function Home() {
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const featuredProducts = [
+    {
+      title: '60 Amper Akü',
+      amper: '60',
+      description: 'Küçük ve orta boy araçlar için ideal ekonomik akü çözümü',
+      features: [
+        '3 yıl garanti',
+        'Ücretsiz yerinde montaj',
+        'Tüm markalar mevcut',
+      ],
+      price: '2.500',
+      slug: '60-amper',
+    },
+    {
+      title: '72 Amper Akü',
+      amper: '72',
+      description: 'En popüler akü modeli, çoğu araç için uygun',
+      features: [
+        '3 yıl garanti',
+        'Ücretsiz yerinde montaj',
+        'Start-Stop teknolojisi',
+      ],
+      price: '3.000',
+      slug: '72-amper',
+    },
+    {
+      title: '90 Amper Akü',
+      amper: '90',
+      description: 'Büyük hacimli araçlar ve SUV\'lar için güçlü akü',
+      features: [
+        '3 yıl garanti',
+        'Ücretsiz yerinde montaj',
+        'Yüksek performans',
+      ],
+      price: '3.800',
+      slug: '90-amper',
+    },
+  ];
+
+  const features = [
+    {
+      icon: 'clock',
+      title: '7/24 Hizmet',
+      description: 'Gece gündüz demeden her an yanınızdayız. Acil durumlarda hemen arayın.',
+    },
+    {
+      icon: 'shield',
+      title: '3 Yıl Garanti',
+      description: 'Bazı akü modellerinde 3 yıl garantili. Orijinal ürün güvencesiyle hizmet.',
+    },
+    {
+      icon: 'location',
+      title: 'Yerinde Montaj',
+      description: 'Nerede olursanız olun, akünüz aracınızın bulunduğu yerde değiştirilir.',
+    },
+    {
+      icon: 'money',
+      title: 'Uygun Fiyat',
+      description: 'Piyasanın en uygun fiyatları ile kaliteli akü hizmeti sunuyoruz.',
+    },
+    {
+      icon: 'lightning',
+      title: 'Hızlı Servis',
+      description: 'Aradığınız anda harekete geçiyoruz. Ortalama 15 dakikada yanınızdayız.',
+    },
+    {
+      icon: 'badge',
+      title: 'Orijinal Ürün',
+      description: 'Sadece orijinal ve güvenilir marka aküler ile çalışıyoruz.',
+    },
+  ];
+
+  const testimonials = [
+    {
+      name: 'Mehmet Y.',
+      location: 'Nilüfer, Bursa',
+      rating: 5,
+      comment: 'Gece yarısı aracım çalışmadı, hemen aradım ve 20 dakikada geldiler. Çok memnun kaldım, herkese tavsiye ederim.',
+    },
+    {
+      name: 'Ayşe K.',
+      location: 'Osmangazi, Bursa',
+      rating: 5,
+      comment: 'Fiyatları diğer akücülere göre gayet uygun. Kapımın önünde montaj yapıldı, çok kolay oldu.',
+    },
+    {
+      name: 'Ahmet D.',
+      location: 'Mudanya, Bursa',
+      rating: 5,
+      comment: 'Sabah arabam marş basmadı, aradım çabucak geldiler. Güler yüzlü esnaf, çok memnun kaldım.',
+    },
+  ];
+
+  return {
+    props: {
+      featuredProducts,
+      features,
+      testimonials,
+    },
+    // Tamamen statik - sadece build zamanında render edilir
+  };
 }
 
