@@ -20,15 +20,17 @@ export default function Hero() {
 
           {/* Ana Başlık */}
           <h1 className="font-heading font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-balance">
-            Bursa'da Garantili Akü Satışı ve{' '}
-            <span className="text-accent">7/24 Yerinde Akü Montajı</span>
+            Bursa’da <span className="text-accent">7/24 Oto Akü Servisi</span> —
+            Garantili Akü Satışı ve Yerinde Ücretsiz Montaj
           </h1>
 
           {/* Alt Başlık */}
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Hemen arayın — yerinde değişim ve montaj ile aracınıza yeni akü gelsin.
-            Kapıda montaj hizmetimizle zamandan tasarruf edin.
+            Nilüfer, Osmangazi ve Mudanya’da mobil akü servisi!
+            Kapıda akü değişimi, ücretsiz servis ve 3 yıl garantili akülerle hızlı destek alın.
+            Acil akü değişimi için hemen arayın.
           </p>
+
 
           {/* CTA Butonları */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">

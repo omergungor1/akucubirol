@@ -40,12 +40,109 @@ export default function Home({ featuredProducts, features, testimonials }) {
     ),
   };
 
+  // JSON-LD Schema for Google Ads optimization
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Akücü Birol - Acil Oto Akü Servisi",
+    "image": "https://akucubirol.com/logo.png",
+    "description": "Acil oto akü servisi, garantili akü yerinde değişim. Nilüfer, Osmangazi ve Mudanya'da mobil akü servisi. 7/24 oto akü servisi, kapıda akü değişimi. Hemen ara: 0533 771 76 16.",
+    "telephone": "+905337717616",
+    "email": "info@akucubirol.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bağlarbaşı, 1. Hürriyet Cd. No:156 D:c",
+      "addressLocality": "Osmangazi",
+      "addressRegion": "Bursa",
+      "postalCode": "16160",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "40.23176547146991",
+      "longitude": "28.984605376616667"
+    },
+    "url": "https://akucubirol.com",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Nilüfer"
+      },
+      {
+        "@type": "City",
+        "name": "Osmangazi"
+      },
+      {
+        "@type": "City",
+        "name": "Mudanya"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Acil Oto Akü Servisi",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Acil Oto Akü Servis Telefonu"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Garantili Akü Yerinde Değişim"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "7/24 Oto Akü Servisi"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Kapıda Akü Değişimi"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ücretsiz Garantili Akü Montajı"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Oto Akü Yol Yardım"
+          }
+        }
+      ]
+    }
+  };
+
   return (
     <Layout
       seo={{
-        title: "Akücü Birol — Akü Satışı & 7/24 Yerinde Montaj | Bursa",
-        description: "Akücü Birol: Bursa ve çevresine garantili akü satışı, anında yerinde montaj ve 7/24 hizmet. Hemen arayın: +90 533 771 76 16.",
+        title: "Acil Oto Akü Servis Telefonu — Garantili Akü, Ücretsiz Montaj, Ücretsiz Mobil Servis,Yerinde Değişim | Akücü Birol",
+        description: "Nilüfer, Osmangazi ve Mudanya'da mobil akü servisi! Ücretsiz montaj fırsatı. Akücü Birol: Garantili akü, ücretsiz montaj, ücretsiz mobil servis, yerinde değişim! 7/24 oto akü servisi. Hemen ara: 0533 771 76 16.",
         canonical: "/",
+        jsonLd: jsonLd,
       }}
     >
       {/* Hero Section */}
@@ -53,6 +150,84 @@ export default function Home({ featuredProducts, features, testimonials }) {
 
       {/* Brand Carousel */}
       <BrandCarousel />
+
+      {/* Acil Oto Akü Servisi - Google Ads Optimized */}
+      <section className="py-12 bg-gradient-to-r from-accent/10 via-accent/5 to-accent/10">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl p-6 md:p-8 border-2 border-accent/20">
+              <div className="text-center mb-6">
+                <h2 className="font-heading font-bold text-2xl md:text-3xl text-textDark mb-3">
+                  Acil Oto Akü Servis Telefonu — Hızlı Akü Değişimi
+                </h2>
+                <p className="text-lg text-textMuted">
+                  <strong className="text-accent">Bursa Oto Akü Servis Telefonu:</strong> Nilüfer, Osmangazi ve Mudanya'da mobil akü servisi! Ücretsiz montaj fırsatı.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="flex items-start gap-3 p-4 bg-background rounded-lg">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <h3 className="font-semibold text-textDark mb-1">Garantili Akü, Yerinde Değişim</h3>
+                    <p className="text-sm text-textMuted">3 Yıl Garantili Akü ile güvenli alışveriş</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-background rounded-lg">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <h3 className="font-semibold text-textDark mb-1">Kapıda Akü Değişimi</h3>
+                    <p className="text-sm text-textMuted">Ücretsiz Garantili Akü Montajı</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-background rounded-lg">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <h3 className="font-semibold text-textDark mb-1">7/24 Oto Akü Servisi</h3>
+                    <p className="text-sm text-textMuted">Gece gündüz kesintisiz hizmet</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 p-4 bg-background rounded-lg">
+                  <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <h3 className="font-semibold text-textDark mb-1">Oto Akü Yol Yardım</h3>
+                    <p className="text-sm text-textMuted">En Yakın Akü Servisi</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="tel:+905337717616"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-accent text-primary font-bold text-lg hover:bg-yellow-400 transition-all hover:scale-105 shadow-lg"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  Acil Oto Akü Servis Telefonu
+                </a>
+                <a
+                  href="/fiyat-al"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-white font-semibold text-lg hover:bg-primary/90 transition-all hover:scale-105"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Hemen Fiyat Al
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Popüler Akü Modelleri */}
       <section className="py-16 bg-white">
@@ -86,15 +261,18 @@ export default function Home({ featuredProducts, features, testimonials }) {
         </div>
       </section>
 
-      {/* Neden Biz */}
+      {/* Neden Biz - Google Ads Optimized */}
       <section className="py-16 bg-gradient-to-br from-primary to-blue-900 text-white">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">
               Neden <span className="text-accent">Akücü Birol?</span>
             </h2>
-            <p className="text-lg text-gray-200">
-              Yılların deneyimi ve güvenilir hizmet anlayışımızla yanınızdayız
+            <p className="text-lg text-gray-200 mb-2">
+              <strong>Mudanya Mobil Akü Servisi</strong> ve <strong>Acil Akü Değişimi</strong> ile yanınızdayız
+            </p>
+            <p className="text-base text-gray-300">
+              Yılların deneyimi ve güvenilir hizmet anlayışımızla <strong>en yakın akü servisi</strong> olarak hizmet veriyoruz
             </p>
           </div>
 
@@ -174,17 +352,37 @@ export default function Home({ featuredProducts, features, testimonials }) {
       {/* Hizmet Bölgeleri */}
       <RegionList />
 
-      {/* CTA Section */}
+      {/* CTA Section - Google Ads Optimized */}
       <section className="py-16 bg-accent">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-primary mb-4">
-              Aracınıza Hemen Yeni Akü Gelsin!
+              Yılların Tecrübesiyle Birol Akü! Mobil Servis, Ücretsiz Montaj, Garantili Aküler
             </h2>
-            <p className="text-lg text-primary/80 mb-8">
-              Kapıda montaj hizmetimiz ile zamandan tasarruf edin.
-              3 yıl garantili aküler ve profesyonel montaj hizmeti.
+            <p className="text-lg text-primary/90 mb-6 font-semibold">
+              Mudanya'da güvenilir akü servisi! Yerinde değişim, uygun fiyat, hızlı hizmet.
             </p>
+            <p className="text-base text-primary/80 mb-8">
+              <strong>Akücü Birol:</strong> Kapıda akü değişimi, ücretsiz servis ve hızlı montaj!
+              <strong> Aküde kampanyalı fiyat</strong> ile <strong>3 yıl garantili akü</strong> fırsatı.
+              <strong> Hızlı akü değişimi</strong> ve <strong>yerinde akü değişimi</strong> hizmetimizle yanınızdayız.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold text-primary mb-1">7/24</div>
+                <div className="text-sm text-primary/90">Oto Akü Servisi</div>
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold text-primary mb-1">3 Yıl</div>
+                <div className="text-sm text-primary/90">Garantili Akü</div>
+              </div>
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold text-primary mb-1">15 Dk</div>
+                <div className="text-sm text-primary/90">Hızlı Ulaşım</div>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="tel:+905337717616"
@@ -193,7 +391,17 @@ export default function Home({ featuredProducts, features, testimonials }) {
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                0533 771 76 16
+                Bursa Oto Akü Servis Telefonu
+              </a>
+
+              <a
+                href="/fiyat-al"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-primary font-bold text-lg border-2 border-white hover:bg-white/90 hover:scale-105 transition-all shadow-lg"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Hemen Fiyat Al —
               </a>
 
               <a
@@ -315,7 +523,8 @@ export async function getStaticProps() {
       features,
       testimonials,
     },
-    // Tamamen statik - sadece build zamanında render edilir
+    // Tamamen SSG - build zamanında render edilir, CDN'den serve edilir
+    // revalidate eklenmediği için tamamen statik kalır
   };
 }
 
