@@ -5,23 +5,25 @@ const regionsData = [
   {
     slug: 'nilufer',
     name: 'Nilüfer',
-    description: 'Nilüfer ilçesi Bursa\'nın modern ve gelişmiş bölgelerinden biridir. Tüm mahallelerine hızlı akü servisi sunuyoruz.',
+    description: 'Nilüfer Mobil Akü Servisi ile yerinde akü değişimi. Nilüfer İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi. 7/24 yerinde montaj hizmeti.',
     neighborhoods: [
-      'Ataevler', 'Beşevler', 'Ertuğrul', 'Fethiye', 'Görükle',
-      'Konak', 'Özlüce', 'Çamlıca', 'Yüzüncüyıl', 'Altınşehir',
-      'Balat', 'Kayapa'
+      'Bademli', 'Balat', 'Beşevler', 'Görükle', 'Hasanağa',
+      '23 Nisan Mahallesi', 'Odunluk', 'Konak Mahallesi', 'Ertuğrul Mahallesi',
+      'Ahmet Yesevi', 'İhsaniye', 'Minareliçavuş', 'Kayapa', 'Barış Mahallesi',
+      'Üçevler', 'FSM Bulvarı', 'Ataevler', 'Fethiye', 'Özlüce', 'Çamlıca', 'Yüzüncüyıl',
+      'Altınşehir'
     ],
     serviceHighlights: [
-      '15 dakikada yerinde akü değişimi',
-      'Ücretsiz akü kontrolü ve test',
-      'Tüm marka araçlara uyumlu akü',
-      'Eski akü geri alımı garantili',
+      'Nilüfer mobil akü servisi ile 15 dakikada yerinde akü değişimi',
+      'Ücretsiz akü kontrolü ve kapınızda montaj hizmeti',
+      'İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi',
+      '3 yıl garantili aküler ve eski akü geri alımı',
     ],
   },
   {
     slug: 'osmangazi',
     name: 'Osmangazi',
-    description: 'Bursa\'nın merkez ilçesi Osmangazi\'de 7/24 mobil akü servisi ile hizmetinizdeyiz.',
+    description: 'Osmangazi Mobil Akü Servisi ile yerinde akü değişimi. Osmangazi İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi. 7/24 yerinde montaj hizmeti.',
     neighborhoods: [
       'Çekirge', 'Heykel', 'Soğanlı', 'Hamitler', 'Panayır',
       'Demirtaş', 'Doğanbey', 'Emek', 'Güneşli', 'Karabalıçeşme',
@@ -29,70 +31,207 @@ const regionsData = [
       'Teferrüç', 'Üçevler', 'Yunuseli'
     ],
     serviceHighlights: [
-      'Acil yol yardımı 7/24',
-      '3 yıl garantili markalar',
-      'Nakit ve kart ile ödeme',
-      'Profesyonel montaj ekibi',
+      'Osmangazi mobil akü servisi ile 15 dakikada yerinde akü değişimi',
+      'Ücretsiz akü kontrolü ve kapınızda montaj hizmeti',
+      'İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi',
+      '3 yıl garantili aküler ve eski akü geri alımı',
     ],
   },
   {
     slug: 'yildirim',
     name: 'Yıldırım',
-    description: 'Yıldırım ilçesinde garantili akü satış ve profesyonel montaj hizmeti sunuyoruz.',
+    description: 'Yıldırım Mobil Akü Servisi ile yerinde akü değişimi. Yıldırım İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi. 7/24 yerinde montaj hizmeti.',
     neighborhoods: [
       'Millet', 'Esenevler', 'Yıldırım', 'Yenişehir', 'İhsaniye',
       'Arabayatağı', 'Davutdede', 'Gazi Kemal', 'Hacıvat', 'İsmetpaşa',
       'Mollaarap', 'Selimiye', 'Siteler', 'Yavuz Selim', 'Yeşil'
     ],
     serviceHighlights: [
-      'Start-Stop araçlara özel akü',
-      'Ağır vasıta akü stokları',
-      'Araç elektrik sistem kontrolü',
-      'Anında servis garantisi',
+      'Yıldırım mobil akü servisi ile 15 dakikada yerinde akü değişimi',
+      'Ücretsiz akü kontrolü ve kapınızda montaj hizmeti',
+      'İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi',
+      'Start-Stop araçlara özel akü ve 3 yıl garantili aküler',
     ],
   },
   {
     slug: 'mudanya',
     name: 'Mudanya',
-    description: 'Mudanya ve sahil kesiminde deneyimli ekibimizle mobil akü hizmeti veriyoruz.',
+    description: 'Mudanya Mobil Akü Servisi ile yerinde akü değişimi. Mudanya İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi. 7/24 yerinde montaj hizmeti.',
     neighborhoods: [
       'Merkez', 'Güzelyalı', 'Altıntaş', 'Mütareke', 'Zeytlinlik',
       'Balabancık', 'Bağlarbaşı', 'Esence'
     ],
     serviceHighlights: [
-      'Garantili ve dayanıklı aküler',
-      'Nakit ve kart ile ödeme',
-      'Profesyonel montaj ekibi',
-      '7/24 hizmet',
+      'Mudanya mobil akü servisi ile 15 dakikada yerinde akü değişimi',
+      'Ücretsiz akü kontrolü ve kapınızda montaj hizmeti',
+      'İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi',
+      '3 yıl garantili aküler ve eski akü geri alımı',
     ],
   }
 ];
 
 export default function BolgeDetay({ region }) {
+  // Bölge kontrolü
+  const isNilufer = region.slug === 'nilufer';
+  const isOsmangazi = region.slug === 'osmangazi';
+  const isMudanya = region.slug === 'mudanya';
+  const isYildirim = region.slug === 'yildirim';
+  const isOptimized = isNilufer || isOsmangazi || isMudanya || isYildirim;
+
+  // SEO Title
+  const seoTitle = isNilufer
+    ? 'Nilüfer Mobil Akü Servisi — Yerinde Akü Değişimi | İnci Varta Mutlu Bosch Energy Akü'
+    : isOsmangazi
+      ? 'Osmangazi Mobil Akü Servisi — Yerinde Akü Değişimi | İnci Varta Mutlu Bosch Akü'
+      : isMudanya
+        ? 'Mudanya Mobil Akü Servisi — Yerinde Akü Değişimi | İnci Varta Mutlu Bosch Akü'
+        : isYildirim
+          ? 'Yıldırım Mobil Akü Servisi — Yerinde Akü Değişimi | İnci Varta Mutlu Bosch Akü'
+          : `${region.name} Akü Servisi — Yerinde Montaj | Akücü Birol`;
+
+  // SEO Description
+  const seoDescription = isNilufer
+    ? 'Nilüfer mobil akü servisi, yerinde akü değişimi. Nilüfer İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi. 7/24 kapıda montaj. Hemen ara: 0533 771 76 16.'
+    : isOsmangazi
+      ? 'Osmangazi mobil akü servisi, yerinde akü değişimi. Osmangazi İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi. 7/24 kapıda montaj. Hemen ara: 0533 771 76 16.'
+      : isMudanya
+        ? 'Mudanya mobil akü servisi, yerinde akü değişimi. Mudanya İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi. 7/24 kapıda montaj. Hemen ara: 0533 771 76 16.'
+        : isYildirim
+          ? 'Yıldırım mobil akü servisi, yerinde akü değişimi. Yıldırım İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi. 7/24 kapıda montaj. Hemen ara: 0533 771 76 16.'
+          : `${region.name} bölgesinde 7/24 mobil akü servisi. Tüm mahallelere ücretsiz yerinde montaj. Hemen arayın: +90 533 771 76 16.`;
+
+  // JSON-LD Schema
+  const getJsonLd = () => {
+    if (!isOptimized) return undefined;
+
+    const regionName = region.name;
+    return {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": `Akücü Birol - ${regionName} Mobil Akü Servisi`,
+      "image": "https://akucubirol.com/logo.png",
+      "description": `${regionName} mobil akü servisi, yerinde akü değişimi. İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi.`,
+      "telephone": "+905337717616",
+      "email": "info@akucubirol.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bağlarbaşı, 1. Hürriyet Cd. No:156 D:c",
+        "addressLocality": "Osmangazi",
+        "addressRegion": "Bursa",
+        "postalCode": "16160",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.23176547146991",
+        "longitude": "28.984605376616667"
+      },
+      "url": `https://akucubirol.com/bolgeler/${region.slug}`,
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": regionName
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": `${regionName} Akü Hizmetleri`,
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": `${regionName} Mobil Akü Servisi`
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Yerinde Akü Değişimi"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "İnci Akü Servisi"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Varta Akü Servisi"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mutlu Akü Servisi"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bosch Akü Servisi"
+            }
+          }
+        ]
+      }
+    };
+  };
+
   return (
     <Layout
       seo={{
-        title: `${region.name} Akü Servisi — Yerinde Montaj | Akücü Birol`,
-        description: `${region.name} bölgesinde 7/24 mobil akü servisi. Tüm mahallelere ücretsiz yerinde montaj. Hemen arayın: +90 533 771 76 16.`,
+        title: seoTitle,
+        description: seoDescription,
         canonical: `/bolgeler/${region.slug}`,
+        jsonLd: getJsonLd(),
       }}
     >
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary to-blue-900 text-white py-16">
+      <section className="bg-gradient-to-br from-primary to-blue-900 text-white py-12 md:py-16">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-3 mb-4">
-              <Link href="/bolgeler" className="text-accent hover:text-yellow-400 transition-colors">
+              <Link href="/bolgeler" className="text-accent hover:text-yellow-400 transition-colors text-sm md:text-base">
                 ← Tüm Bölgeler
               </Link>
             </div>
-            <h1 className="font-heading font-bold text-4xl md:text-5xl mb-4">
-              {region.name} Akü Servisi
+            <h1 className="font-heading font-bold text-3xl md:text-4xl lg:text-5xl mb-4">
+              {isOptimized
+                ? `${region.name} Mobil Akü Servisi — Yerinde Akü Değişimi`
+                : `${region.name} Akü Servisi`}
             </h1>
-            <p className="text-xl text-gray-200 leading-relaxed mb-6">
-              {region.description}
-            </p>
-            <div className="flex items-center gap-6 flex-wrap">
+            {isOptimized ? (
+              <>
+                <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-4">
+                  <strong className="text-accent">{region.name} 7/24 Oto Akü Servisi</strong> ile mobil servis ile kapıda montaj.
+                  <strong> {region.name} İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü servisi</strong> ile garantili akü değişimi.
+                  Aküm bitti mi? Oto akü fiyatları için hemen ara!
+                </p>
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6">
+                  <strong>Yerinde akü değişimi</strong> ve <strong>ücretsiz akü montajı</strong> ile {region.name}'in tüm mahallelerine hizmet veriyoruz.
+                  <strong> 3 yıl garantili aküler</strong>, kampanyalı akü fiyatları ve en yakın akü servisi ile yanınızdayız.
+                </p>
+              </>
+            ) : (
+              <p className="text-xl text-gray-200 leading-relaxed mb-6">
+                {region.description}
+              </p>
+            )}
+            <div className="flex items-center gap-6 flex-wrap mb-6">
               <div className="inline-flex items-center gap-2 text-sm">
                 <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -112,6 +251,34 @@ export default function BolgeDetay({ region }) {
                 <span>{region.neighborhoods.length} Mahalle</span>
               </div>
             </div>
+
+            {/* Mobil CTA - Optimize edilmiş bölgeler için */}
+            {isOptimized && (
+              <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                <a
+                  href="tel:+905337717616"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-4 rounded-xl bg-accent text-primary font-bold text-base sm:text-lg shadow-2xl hover:bg-yellow-400 hover:scale-105 transition-all duration-200 active:scale-95"
+                >
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span className="hidden sm:inline">Hemen Ara — </span>
+                  <span>0533 771 76 16</span>
+                </a>
+                <a
+                  href="https://wa.me/905337717616"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 sm:px-8 py-4 rounded-xl bg-success text-white font-semibold text-base sm:text-lg shadow-xl hover:bg-green-500 hover:scale-105 transition-all duration-200 active:scale-95"
+                >
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                  </svg>
+                  <span className="hidden sm:inline">WhatsApp — </span>
+                  <span>0533 771 76 16</span>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -164,6 +331,132 @@ export default function BolgeDetay({ region }) {
                 </ul>
               </div>
 
+              {/* Optimize edilmiş bölgeler için özel içerik */}
+              {isOptimized && (
+                <>
+                  {/* Akü Markaları */}
+                  <div className="card">
+                    <h2 className="font-heading font-semibold text-2xl text-textDark mb-6">
+                      {region.name} İnci Akü, Varta Akü, Mutlu Akü, Bosch Akü Servisi
+                    </h2>
+                    <p className="text-textMuted mb-6 leading-relaxed">
+                      {region.name}'de <strong>İnci Akü servisi</strong>, <strong>Varta Akü servisi</strong>,
+                      <strong> Mutlu Akü servisi</strong> ve <strong>Bosch Akü servisi</strong> ile tüm marka aküleri stoklarımızda bulabilirsiniz.
+                      <strong> Oto akü fiyatları</strong> için hemen arayın, <strong>en uygun araç akü fiyatları</strong> ile hizmetinizdeyiz.
+                    </p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      {[
+                        { name: 'İnci Akü', desc: 'İnci Akü servisi ve değişimi' },
+                        { name: 'Varta Akü', desc: 'Varta Akü servisi ve değişimi' },
+                        { name: 'Mutlu Akü', desc: 'Mutlu Akü servisi ve değişimi' },
+                        { name: 'Bosch Akü', desc: 'Bosch Akü servisi ve değişimi' },
+                      ].map((brand, index) => (
+                        <div key={index} className="p-4 bg-background rounded-lg border border-gray-200 hover:border-accent transition-colors">
+                          <h3 className="font-semibold text-textDark mb-2">{brand.name}</h3>
+                          <p className="text-sm text-textMuted">{brand.desc}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Mobil Akü Servisi ve Yerinde Akü Değişimi */}
+                  <div className="card">
+                    <h2 className="font-heading font-semibold text-2xl text-textDark mb-6">
+                      {region.name} Mobil Akü Servisi ve Yerinde Akü Değişimi
+                    </h2>
+                    <div className="space-y-4 text-textMuted leading-relaxed">
+                      <p>
+                        <strong className="text-textDark">{region.name} mobil akü servisi</strong> ile aracınızın bulunduğu yerde
+                        <strong> yerinde akü değişimi</strong> yapıyoruz. <strong>Kapıda akü değişimi</strong> ve
+                        <strong> ücretsiz akü montajı</strong> hizmetimizle {region.name}'in tüm mahallelerine 7/24 hizmet veriyoruz.
+                      </p>
+                      <p>
+                        <strong className="text-textDark">Akü takviye hizmeti</strong>, <strong>akü değişim yol yardım</strong> ve
+                        <strong> mobil akü servisi</strong> ile yanınızdayız. <strong>Acil akü</strong> ihtiyacınızda
+                        <strong> akü bitti</strong> durumunda hemen arayın, ortalama 15 dakikada adresinize ulaşıyoruz.
+                      </p>
+                      <p>
+                        <strong className="text-textDark">Oto akü değişim</strong> işlemlerimizde <strong>3 yıl garantili aküler</strong> sunuyoruz.
+                        <strong> Oto akü fiyatları</strong>, <strong>60 amper oto akü fiyatları</strong>,
+                        <strong> 72 amper oto akü fiyatları</strong> ve diğer amper değerleri için fiyat teklifi alabilirsiniz.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Güven Unsurları ve İletişim */}
+                  <div className="card">
+                    <h2 className="font-heading font-semibold text-2xl text-textDark mb-6">
+                      İletişim ve Adres Bilgileri
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-3">
+                          <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                          </svg>
+                          <div>
+                            <h3 className="font-semibold text-textDark mb-1">Telefon</h3>
+                            <a href="tel:+905337717616" className="text-accent hover:text-yellow-600 font-medium">
+                              0533 771 76 16
+                            </a>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <svg className="w-6 h-6 text-success flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                          </svg>
+                          <div>
+                            <h3 className="font-semibold text-textDark mb-1">WhatsApp</h3>
+                            <a href="https://wa.me/905337717616" target="_blank" rel="noopener noreferrer" className="text-success hover:text-green-600 font-medium">
+                              0533 771 76 16
+                            </a>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <svg className="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                          <div>
+                            <h3 className="font-semibold text-textDark mb-1">E-posta</h3>
+                            <a href="mailto:info@akucubirol.com" className="text-primary hover:text-blue-700 font-medium">
+                              info@akucubirol.com
+                            </a>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <svg className="w-6 h-6 text-accent flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                          <div>
+                            <h3 className="font-semibold text-textDark mb-1">Adres</h3>
+                            <p className="text-textMuted">
+                              Bağlarbaşı, 1. Hürriyet Cd. No:156 D:c<br />
+                              16160 Osmangazi/Bursa
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-textDark mb-4">Konum</h3>
+                        <div className="w-full h-64 md:h-80 rounded-lg overflow-hidden">
+                          <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.9791651696623!2d28.984605376616667!3d40.23176547146991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ca15673c93c6df%3A0x3de57414968365b9!2zQUvDnEPDnCBCxLBST0wgQkHEnkxBUkJBxZ5J!5e0!3m2!1str!2str!4v1763011331703!5m2!1str!2str"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Akücü Birol Konum"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )}
+
               {/* Neden Biz */}
               <div className="card">
                 <h2 className="font-heading font-semibold text-2xl text-textDark mb-6">
@@ -189,7 +482,7 @@ export default function BolgeDetay({ region }) {
             <div className="lg:col-span-1">
               <div className="card sticky top-24 space-y-6">
                 <h3 className="font-heading font-semibold text-xl text-textDark">
-                  Hemen Sipariş Verin
+                  Hemen Bilgi Alın
                 </h3>
 
                 <div className="space-y-4">
