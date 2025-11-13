@@ -597,6 +597,8 @@ export async function getStaticProps({ params }) {
     props: {
       region,
     },
+    // SSG için cache headers - build zamanında render edilir, CDN'den serve edilir
+    // revalidate eklenmediği için tamamen statik kalır
   };
 }
 
