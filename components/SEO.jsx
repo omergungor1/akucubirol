@@ -1,6 +1,7 @@
+import React from 'react';
 import Head from 'next/head';
 
-export default function SEO({ 
+export default function SEO({
   title = "Akücü Birol — Akü Satışı & 7/24 Yerinde Montaj | Bursa",
   description = "Akücü Birol: Bursa ve çevresine garantili akü satışı, anında yerinde montaj ve 7/24 hizmet. Hemen arayın: +90 533 771 76 16.",
   canonical,
@@ -12,7 +13,7 @@ export default function SEO({
   const siteUrl = "https://akucubirol.com"; // Production URL
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
   const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
-  
+
   const defaultJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -47,7 +48,7 @@ export default function SEO({
         "name": "Bursa"
       },
       {
-        "@type": "City", 
+        "@type": "City",
         "name": "Nilüfer"
       },
       {
@@ -96,10 +97,10 @@ export default function SEO({
       <title>{title}</title>
       <meta name="description" content={description} />
       {noindex && <meta name="robots" content="noindex,nofollow" />}
-      
+
       {/* Canonical URL */}
       <link rel="canonical" href={fullCanonical} />
-      
+
       {/* Open Graph */}
       <meta property="og:type" content={ogType} />
       <meta property="og:title" content={title} />
@@ -108,22 +109,22 @@ export default function SEO({
       <meta property="og:url" content={fullCanonical} />
       <meta property="og:site_name" content="Akücü Birol" />
       <meta property="og:locale" content="tr_TR" />
-      
+
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={fullOgImage} />
-      
+
       {/* Additional Meta */}
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="Turkish" />
-      
+
       {/* Contact Info */}
       <meta name="contact" content="+905337717616" />
       <meta name="author" content="Akücü Birol" />
-      
+
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"

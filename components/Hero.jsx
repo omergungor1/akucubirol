@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-primary via-primary to-blue-900 text-white overflow-hidden">
